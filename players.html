@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feast of Legends</title>
+        <style>
+            table{
+                margin: 30px auto;
+                width:80%;
+            }
+            th{text-align: center !important;}
+            td:nth-child(1),td:nth-child(2),td:nth-child(3){
+                text-align: center;
+            }
+            td{vertical-align: top;}
+            .passive{
+                color:#1ba31b;
+            }
+            .hp, .defense{font-size: 20px;}
+            .hp i, .defense i{font-size: 22px;}
+            .hp i{
+                color:#eb0800;
+                margin-left: 5px;
+            }
+            .defense i{
+                color:#0380ed;
+            }
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th data-toggle="tooltip" 
+                    data-placement="top" 
+                    data-html="true" 
+                    title="<img src='https://uploads.camp.com/8a4d2615668c56e57f93c8d977f21eff.png'">Player</th>
+                    <th>Character</th>
+                    <th>Defense</th>
+                    <th>Traits</th>
+                    <th>Skills (<i class="fa fa-universal-access passive" aria-hidden="true"></i> = Passive)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Allum</td>
+                    <td 
+                        data-toggle="tooltip" 
+                        data-placement="top" 
+                        data-html="true" 
+                        title="<strong style='text-decoration:underline;'>Order of the French Fries</strong><br>Str: 8 (+1)<br>Int: 9 (+1)<br>Chrm: 12 (+1)<br>Arc: 12 (+1)<br>Grace: 14 (+2)"
+                    >
+                        Sigfried<div class="hp">14<i class="fa fa-heart" aria-hidden="true"></i></div>
+                    </td>
+                    <td class="defense">12 <i class="fa fa-shield" aria-hidden="true"></i></td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li>From <strong>Freshtovia</strong></li>
+                            <li>Not a fan of being used</li>
+                            <li>Is generally well liked by everyone</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="If you are within 10 feet of someone who has chosen the Order of the Frosty, you both gain advantage on all skill rolls."><i class="fa fa-universal-access passive" aria-hidden="true"></i> The Frosty Dip</li>
+                            <li 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="When engaged in combat, you do not have to use an action to break out. You can move away freely without risk of attack. You can also use a bonus action to move up to twice your movement and still attack or perform another action"><i class="fa fa-universal-access passive" aria-hidden="true"></i> Grab and Go</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ashley</td>
+                    <td
+                        data-toggle="tooltip" 
+                        data-placement="top" 
+                        data-html="true" 
+                        title="<strong style='text-decoration:underline;'>Order Of The Asiago Ranch Chicken Club</strong><br>Str: 11 (+1)<br>Int: 7 (0)<br>Chrm: 10 (+1)<br>Arc: 16 (+3)<br>Grace: 14 (+2)"
+                    >
+                        Chikira<div class="hp">12<i class="fa fa-heart" aria-hidden="true"></i></div>
+                    </td>
+                    <td class="defense">14 <i class="fa fa-shield" aria-hidden="true"></i></td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li>Was raised in a village at the border of the <strong>Deep Freeze</strong></li>
+                            <li>Dreams of seeing the world</li>
+                            <li>A chance meeting with a bard drove her to adventure through song</li>
+                            <li>Simple and good natured</li>
+                            <li>Living a secluded life didn't give her much social skills</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="You guide your friends to clarity, removing any curses, status effects or magically caused weaknesses and dis- advantages.<br><br>Casting Distance: Touch"
+                            >
+                                Re-FRESH
+                            </li>
+                            <li
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="When not in combat, you can build a warm and comfortable fire. On an Arcana check of 14 or more, your flame’s aura can protect the group from bandits while sitting down to a meal."
+                            >
+                                Home Is Where the Hearth Is
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Justin</td>
+                    <td 
+                        data-toggle="tooltip" 
+                        data-placement="top" 
+                        data-html="true" 
+                        title="<strong style='text-decoration:underline;'>Order of the Baconator</strong><br>Str: 13 (+2)<br>Int: 10 (+1)<br>Chrm: 11 (+1)<br>Arc: 9 (+1)<br>Grace: 12 (+1)
+                    ">
+                        Sir Loin Brioche<div class="hp">13<i class="fa fa-heart" aria-hidden="true"></i></div>
+                    </td>
+                    <td class="defense">17 <i class="fa fa-shield" aria-hidden="true"></i></td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li>From <strong>Freshtovia</strong></li>
+                            <li>Stubborn hot-head</li>
+                            <li>A seasoned, decently high ranking knight of the kingdom</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="While attacking at nighttime, you will gain advantage on all attack and strength-saving rolls"><i class="fa fa-universal-access passive" aria-hidden="true"></i> Late-night Craving</li>
+                            <li 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="You have resistance to all cold damage. You are truly fresh, never frozen"><i class="fa fa-universal-access passive" aria-hidden="true"></i> Fresh, Never Frozen</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sherron</td>
+                    <td 
+                        data-toggle="tooltip" 
+                        data-placement="top" 
+                        data-html="true" 
+                        title="<strong style='text-decoration:underline;'>Order of the Spicy Chicken Sandwich</strong><br>Str: 5 (-1)<br>Int: 7 (0)<br>Chrm: 7 (0)<br>Arc: 15 (+2)<br>Grace: 10 (+1)"
+                    >
+                        Jenyaries<div class="hp">13<i class="fa fa-heart" aria-hidden="true"></i></div>
+                    </td>
+                    <td class="defense">12 <i class="fa fa-shield" aria-hidden="true"></i></td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li>Originally from the <strong>Roast Beach</strong>.</li>
+                            <li>Comes from wealth, and was judged for it</li>
+                            <li>Left home to prove she was strong not because of what her money could afford</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="Reaching out and touching an adjacent enemy with the spice left on your fingertips. If the attack hits, it does one d4+1 heat damage. Casting Distance: 5 feet"
+                            >
+                                Spicy Touch
+                            </li>
+                            <li
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="A steady heat that slowly wears on your opponents. The enemy must make a strength-saving throw of 13 or higher. If the enemy fails the throw, they will take one point of heat damage and one additional point of heat damage after each of their turns. (At level 3, this increases to three points of heat damage and three additional points of heat damage after each of their turns.<br><br>Casting Distance: 90 feet"
+                            >
+                                Slow Heat</li>
+                            <li
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="A diversion tactic in which a cloud of smoke appears and temporarily blinds your opponents. Choose a point within the casting distance. All characters within a 10-foot radius of that point must make a strength-saving throw of 13 or higher. Those who fail the throw will have their movement ability reduced by half and be at a disadvantage on all rolls made that turn. Characters moving into the area must make a saving throw, and characters starting their turn in the area must make an additional saving throw. This spell lasts three turns or until a different smokescreen or smoke bomb is cast.<br><br>Casting Distance: 90 feet"
+                            >
+                                Smokescreen
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shirley</td>
+                    <td 
+                        data-toggle="tooltip" 
+                        data-placement="top" 
+                        data-html="true" 
+                        title="<strong style='text-decoration:underline;'>Order of the Baked Potato</strong><br>Str: 6 (-1)<br>Int: 9 (+1)<br>Chrm: 10 (+1)<br>Arc: 14 (+2)<br>Grace: 9 (+1)"
+                    >
+                        Spudilla <div class="hp">9<i class="fa fa-heart" aria-hidden="true"></i></div>
+                    </td>
+                    <td class="defense">16 <i class="fa fa-shield" aria-hidden="true"></i></td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li>Angry &amp; Hot-headed</li>
+                            <li>An adopted child of fairies from the <strong>French Fry Forest</strong></li>
+                            <li>Has many scars from her escape hidden under armour</li>
+                            <li>Visible scarring on left side of face</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="When an encounter is taking place outside, add an additional +1 to all Arcana rolls."><i class="fa fa-universal-access passive" aria-hidden="true"></i> Salt of the Earth</li>
+                            <li 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="On a successful Arcana roll of 12 or higher, you and friends within 20 feet of you will have raised spirits, gaining advantage on attack rolls for the next two turns.">Hearty Fulfillment</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Williams</td>
+                    <td 
+                        data-toggle="tooltip" 
+                        data-placement="top" 
+                        data-html="true" 
+                        title="<strong style='text-decoration:underline;'>Order of the Jr. Baconator</strong><br>Str: 12 (+2)<br>Int: 9 (+1)<br>Chrm: 9 (+1)<br>Arc: 8 (0)<br>Grace: 13 (+2)"
+                    >
+                        Griswald<div class="hp">10<i class="fa fa-heart" aria-hidden="true"></i></div>
+                    </td>
+                    <td class="defense">16 <i class="fa fa-shield" aria-hidden="true"></i></td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li>From the outskirts of the <strong>Deep Freeze</strong>.</li>
+                            <li>Self-conscious about abnormally short legs.</li>
+                            <li>Like Bears, Hates Heights</li>
+                            <li>Likes showing off feats of str and fighting</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="fa-ul">
+                            <li 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="At any point a teammate (only 1) is within 10 ft of you, both you and the teammate gain a +1 on strength-saving rolls."><i class="fa fa-universal-access passive" aria-hidden="true"></i> Combo Buddies</li>
+                            <li 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                data-html="true" 
+                                title="You have resistance to all cold damage. You are truly fresh, never frozen"><i class="fa fa-universal-access passive" aria-hidden="true"></i> Fresh, Never Frozen</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script>
+            $(document).ready(function () {$('[data-toggle="tooltip"]').tooltip()});
+        </script>
+    </body>
+</html>
