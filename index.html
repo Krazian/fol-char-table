@@ -9,6 +9,7 @@
                 margin: 30px auto;
                 width:80%;
             }
+            td, th{padding: 5px;}
             th{text-align: center !important;}
             td:nth-child(1),td:nth-child(2),td:nth-child(3){
                 text-align: center;
@@ -17,15 +18,18 @@
             .passive{
                 color:#1ba31b;
             }
+            .portrait{width:100px;}
             .hp, .defense{font-size: 20px;}
             .hp i, .defense i{font-size: 22px;}
             .hp i{
                 color:#eb0800;
                 margin-left: 5px;
             }
-            .defense i{
-                color:#0380ed;
+            .defense {
+                color:#0303FF;
             }
+            .resistance-to-ice .resist{color: #DC3545;}
+            .resistance-to-ice .ice-ice-baby{color: #0380ed}
         </style>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
@@ -36,7 +40,7 @@
                     <th data-toggle="tooltip" 
                     data-placement="top" 
                     data-html="true" 
-                    title="<img src='https://uploads.camp.com/8a4d2615668c56e57f93c8d977f21eff.png'">Player</th>
+                    title="<img class="portrait" src='https://uploads.camp.com/8a4d2615668c56e57f93c8d977f21eff.png'">Player</th>
                     <th>Character</th>
                     <th>Defense</th>
                     <th>Traits</th>
@@ -45,7 +49,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Allum</td>
+                    <td>Allum<img class="portrait" src="./img/sigfried.png"></td>
                     <td 
                         data-toggle="tooltip" 
                         data-placement="top" 
@@ -54,9 +58,11 @@
                     >
                         Sigfried<div class="hp">14<i class="fa fa-heart" aria-hidden="true"></i></div>
                     </td>
-                    <td class="defense">12 <i class="fa fa-shield" aria-hidden="true"></i></td>
                     <td>
-                        <ul class="fa-ul">
+                        12 <i class="fa fa-shield defense" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <ul>
                             <li>From <strong>Freshtovia</strong></li>
                             <li>Not a fan of being used</li>
                             <li>Is generally well liked by everyone</li>
@@ -78,7 +84,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Ashley</td>
+                    <td>Ashley<img class="portrait" src="./img/chikira.png"></td>
                     <td
                         data-toggle="tooltip" 
                         data-placement="top" 
@@ -87,9 +93,15 @@
                     >
                         Chikira<div class="hp">12<i class="fa fa-heart" aria-hidden="true"></i></div>
                     </td>
-                    <td class="defense">14 <i class="fa fa-shield" aria-hidden="true"></i></td>
                     <td>
-                        <ul class="fa-ul">
+                        14 <i class="fa fa-shield defense" aria-hidden="true"></i>
+                        <div class="fa-stack fa-lg resistance-to-ice" data-toggle="tooltip" data-placement="top" data-html="true" title="Resistant to ice/cold damage">
+                            <i class="fa fa-ban fa-2x fa-stack-1x resist"></i>
+                            <i class="fa fa-snowflake-o fa-stack-1x ice-ice-baby" aria-hidden="true"></i></i>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
                             <li>Was raised in a village at the border of the <strong>Deep Freeze</strong></li>
                             <li>Dreams of seeing the world</li>
                             <li>A chance meeting with a bard drove her to adventure through song</li>
@@ -128,9 +140,15 @@
                     ">
                         Sir Loin Brioche<div class="hp">13<i class="fa fa-heart" aria-hidden="true"></i></div>
                     </td>
-                    <td class="defense">17 <i class="fa fa-shield" aria-hidden="true"></i></td>
                     <td>
-                        <ul class="fa-ul">
+                        17 <i class="fa fa-shield defense" aria-hidden="true"></i>
+                        <div class="fa-stack fa-lg resistance-to-ice" data-toggle="tooltip" data-placement="top" data-html="true" title="Resistant to ice/cold damage">
+                            <i class="fa fa-ban fa-2x fa-stack-1x resist"></i>
+                            <i class="fa fa-snowflake-o fa-stack-1x ice-ice-baby" aria-hidden="true"></i></i>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
                             <li>From <strong>Freshtovia</strong></li>
                             <li>Stubborn hot-head</li>
                             <li>A seasoned, decently high ranking knight of the kingdom</li>
@@ -152,7 +170,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Sherron</td>
+                    <td>Sherron<img class="portrait" src="./img/jenyaries.png"></td>
                     <td 
                         data-toggle="tooltip" 
                         data-placement="top" 
@@ -161,9 +179,11 @@
                     >
                         Jenyaries<div class="hp">13<i class="fa fa-heart" aria-hidden="true"></i></div>
                     </td>
-                    <td class="defense">12 <i class="fa fa-shield" aria-hidden="true"></i></td>
                     <td>
-                        <ul class="fa-ul">
+                        12 <i class="fa fa-shield defense" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <ul>
                             <li>Originally from the <strong>Roast Beach</strong>.</li>
                             <li>Comes from wealth, and was judged for it</li>
                             <li>Left home to prove she was strong not because of what her money could afford</li>
@@ -207,9 +227,15 @@
                     >
                         Spudilla <div class="hp">9<i class="fa fa-heart" aria-hidden="true"></i></div>
                     </td>
-                    <td class="defense">16 <i class="fa fa-shield" aria-hidden="true"></i></td>
                     <td>
-                        <ul class="fa-ul">
+                        16 <i class="fa fa-shield defense" aria-hidden="true"></i>
+                        <div class="fa-stack fa-lg resistance-to-ice" data-toggle="tooltip" data-placement="top" data-html="true" title="Resistant to ice/cold damage">
+                            <i class="fa fa-ban fa-2x fa-stack-1x resist"></i>
+                            <i class="fa fa-snowflake-o fa-stack-1x ice-ice-baby" aria-hidden="true"></i></i>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
                             <li>Angry &amp; Hot-headed</li>
                             <li>An adopted child of fairies from the <strong>French Fry Forest</strong></li>
                             <li>Has many scars from her escape hidden under armour</li>
@@ -232,7 +258,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Williams</td>
+                    <td>Williams<img class="portrait" src="./img/griswald.png"></td>
                     <td 
                         data-toggle="tooltip" 
                         data-placement="top" 
@@ -241,9 +267,15 @@
                     >
                         Griswald<div class="hp">10<i class="fa fa-heart" aria-hidden="true"></i></div>
                     </td>
-                    <td class="defense">16 <i class="fa fa-shield" aria-hidden="true"></i></td>
                     <td>
-                        <ul class="fa-ul">
+                        16 <i class="fa fa-shield defense" aria-hidden="true"></i>
+                        <div class="fa-stack fa-lg resistance-to-ice" data-toggle="tooltip" data-placement="top" data-html="true" title="Resistant to ice/cold damage">
+                            <i class="fa fa-ban fa-2x fa-stack-1x resist"></i>
+                            <i class="fa fa-snowflake-o fa-stack-1x ice-ice-baby" aria-hidden="true"></i></i>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
                             <li>From the outskirts of the <strong>Deep Freeze</strong>.</li>
                             <li>Self-conscious about abnormally short legs.</li>
                             <li>Like Bears, Hates Heights</li>
